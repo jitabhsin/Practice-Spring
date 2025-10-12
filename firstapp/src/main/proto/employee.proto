@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package com.example.xmlconverter.model;
+
+option java_package = "com.example.xmlconverter.model";
+option java_outer_classname = "EmployeeProto";
+
+// Message for an Address
+message Address {
+  string street = 1;
+  string city = 2;
+  string state = 3;
+  string zip = 4;
+}
+
+// Message for an Employee
+message Employee {
+  string id = 1;
+  string name = 2;
+  int32 age = 3;
+  bool active = 4;
+  string position = 5;
+  double salary = 6;
+  Address address = 7;
+  repeated string skills = 8;
+}

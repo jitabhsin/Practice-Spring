@@ -1,0 +1,42 @@
+{
+  "Employees" : {
+    "Employee" : [ {
+      "id" : "E001",
+      "FirstName" : "John",
+      "LastName" : "Doe",
+      "Email" : "john.doe@example.com",
+      "Phone" : "+1-555-1234",
+      "Department" : "Engineering",
+      "Role" : "Software Engineer",
+      "DateOfJoining" : "2022-07-15",
+      "Salary" : {
+        "currency" : "USD",
+        "" : "85000"
+      }
+    }, {
+      "id" : "E002",
+      "FirstName" : "Jane",
+      "LastName" : "Smith",
+      "Email" : "jane.smith@example.com",
+      "Phone" : "+1-555-5678",
+      "Department" : "Marketing",
+      "Role" : "Marketing Manager",
+      "DateOfJoining" : "2021-03-10",
+      "Salary" : {
+        "currency" : "USD",
+        "" : "95000"
+      }
+    } ]
+  },
+  "Departments" : {
+    "Department" : [ {
+      "name" : "Engineering",
+      "Manager" : "Michael Scott",
+      "Location" : "New York"
+    }, {
+      "name" : "Marketing",
+      "Manager" : "Pam Beesly",
+      "Location" : "Los Angeles"
+    } ]
+  }
+}

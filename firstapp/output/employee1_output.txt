@@ -1,0 +1,15 @@
+id: "E123"
+name: "John Doe"
+age: 30
+active: true
+position: "Software Engineer"
+salary: 75000.0
+address {
+  street: "456 Elm St"
+  city: "Metropolis"
+  state: "NY"
+  zip: "10001"
+}
+skills: "Java"
+skills: "SQL"
+skills: "Python"

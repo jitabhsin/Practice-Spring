@@ -1,0 +1,44 @@
+<ObjectNode>
+  <company>
+    <name>Tech Solutions Inc.</name>
+    <location>New York, USA</location>
+    <employees>
+      <id>E001</id>
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <email>john.doe@example.com</email>
+      <phone>+1-555-1234</phone>
+      <department>Engineering</department>
+      <role>Software Engineer</role>
+      <dateOfJoining>2022-07-15</dateOfJoining>
+      <salary>
+        <amount>85000</amount>
+        <currency>USD</currency>
+      </salary>
+    </employees>
+    <employees>
+      <id>E002</id>
+      <firstName>Jane</firstName>
+      <lastName>Smith</lastName>
+      <email>jane.smith@example.com</email>
+      <phone>+1-555-5678</phone>
+      <department>Marketing</department>
+      <role>Marketing Manager</role>
+      <dateOfJoining>2021-03-10</dateOfJoining>
+      <salary>
+        <amount>95000</amount>
+        <currency>USD</currency>
+      </salary>
+    </employees>
+    <departments>
+      <name>Engineering</name>
+      <manager>Michael Scott</manager>
+      <location>New York</location>
+    </departments>
+    <departments>
+      <name>Marketing</name>
+      <manager>Pam Beesly</manager>
+      <location>Los Angeles</location>
+    </departments>
+  </company>
+</ObjectNode>

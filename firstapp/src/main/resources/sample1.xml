@@ -1,0 +1,16 @@
+<Employee id="E123">
+    <name>John Doe</name>
+    <age>30</age>
+    <active>true</active>
+    <position>Software Engineer</position>
+    <salary>75000</salary>
+    <address>
+        <street>456 Elm St</street>
+        <city>Metropolis</city>
+        <state>NY</state>
+        <zip>10001</zip>
+    </address>
+    <skills>Java</skills>
+    <skills>SQL</skills>
+    <skills>Python</skills>
+</Employee>

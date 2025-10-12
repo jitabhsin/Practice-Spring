@@ -1,0 +1,48 @@
+{
+  "company": {
+    "name": "Tech Solutions Inc.",
+    "location": "New York, USA",
+    "employees": [
+      {
+        "id": "E001",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-1234",
+        "department": "Engineering",
+        "role": "Software Engineer",
+        "dateOfJoining": "2022-07-15",
+        "salary": {
+          "amount": 85000,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": "E002",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+1-555-5678",
+        "department": "Marketing",
+        "role": "Marketing Manager",
+        "dateOfJoining": "2021-03-10",
+        "salary": {
+          "amount": 95000,
+          "currency": "USD"
+        }
+      }
+    ],
+    "departments": [
+      {
+        "name": "Engineering",
+        "manager": "Michael Scott",
+        "location": "New York"
+      },
+      {
+        "name": "Marketing",
+        "manager": "Pam Beesly",
+        "location": "Los Angeles"
+      }
+    ]
+  }
+}

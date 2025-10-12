@@ -1,0 +1,8 @@
+id: "E456"
+name: "Jane Doe"
+age: 28
+address {
+  street: "789 Oak St"
+  city: "Gotham"
+}
+skills: "JavaScript"

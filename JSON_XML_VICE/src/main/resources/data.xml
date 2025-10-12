@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company>
+    <Employees>
+        <Employee id="E001">
+            <FirstName>John</FirstName>
+            <LastName>Doe</LastName>
+            <Email>john.doe@example.com</Email>
+            <Phone>+1-555-1234</Phone>
+            <Department>Engineering</Department>
+            <Role>Software Engineer</Role>
+            <DateOfJoining>2022-07-15</DateOfJoining>
+            <Salary currency="USD">85000</Salary>
+        </Employee>
+        <Employee id="E002">
+            <FirstName>Jane</FirstName>
+            <LastName>Smith</LastName>
+            <Email>jane.smith@example.com</Email>
+            <Phone>+1-555-5678</Phone>
+            <Department>Marketing</Department>
+            <Role>Marketing Manager</Role>
+            <DateOfJoining>2021-03-10</DateOfJoining>
+            <Salary currency="USD">95000</Salary>
+        </Employee>
+    </Employees>
+    <Departments>
+        <Department name="Engineering">
+            <Manager>Michael Scott</Manager>
+            <Location>New York</Location>
+        </Department>
+        <Department name="Marketing">
+            <Manager>Pam Beesly</Manager>
+            <Location>Los Angeles</Location>
+        </Department>
+    </Departments>
+</Company>
