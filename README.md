@@ -96,59 +96,208 @@ If you'd like, I can commit this `README.md` to the repository now and (optional
 Generated on: 2025-10-12
 # Practice-Spring
 
-## Overview
-This repository contains multiple Spring Boot projects built for practice, learning, and experimentation with various Java, Spring, and database concepts. Each subdirectory represents a standalone project demonstrating different features, APIs, or integrations.
+This repository is a collection of various hands-on projects developed to practice and demonstrate skills in **Java**, **Spring Boot**, and related technologies. Each folder contains a standalone project focusing on a specific use case, from API development and database integration to data conversion utilities.
 
----
+# Projects Overview
 
-## Projects
+Below is a summary of each project included in this repository.
 
-### 1. JSON_XML_VICE
-- **Description:** Demonstrates conversion between JSON and XML files. Likely includes file handling, parsing, and transformation using Spring Boot.
-- **Skills Covered:** JSON processing, XML handling, Java I/O, Spring Boot services.
+# 1. XML to Protobuf Converter (xmlconverter)
 
-### 2. assessment1
-- **Description:** Likely a small Spring Boot application for practice or assessment purposes.
-- **Skills Covered:** CRUD operations, REST APIs, Spring Boot basics.
+## Project Type
 
-### 3. catfact
-- **Description:** Provides random cat facts, likely via a REST API.
-- **Skills Covered:** RESTful API creation, JSON responses, basic controller-service-repository structure.
+Maven Java (Spring-style console app) with Protocol Buffers.
 
-### 4. cveapi
-- **Description:** Interfaces with a CVE (Common Vulnerabilities and Exposures) API to fetch security vulnerabilities.
-- **Skills Covered:** External API integration, REST calls, JSON processing.
+## Description
 
-### 5. employeeapi
-- **Description:** Manages employee data with CRUD operations.
-- **Skills Covered:** Spring Data JPA, REST APIs, MySQL integration.
+A command-line utility that converts XML data into Google's Protocol Buffers format based on a predefined .proto schema.
 
-### 6. excelmysql
-- **Description:** Demonstrates reading/writing Excel files and integrating them with a MySQL database.
-- **Skills Covered:** Apache POI for Excel, MySQL CRUD, data persistence.
+## Key Features
 
-### 7. firstapp
-- **Description:** The first Spring Boot project in this repository; likely covers fundamental Spring Boot setup and configurations.
-- **Skills Covered:** Spring Boot initialization, application properties, basic REST endpoints.
+* Uses protoc to generate Java classes from employee.proto.
+* Reads sample XML files (sample1.xml, sample2.xml).
+* Outputs serialized protobuf data to text files.
 
-### 8. jsonapi
-- **Description:** Provides JSON-based APIs for various functionalities.
-- **Skills Covered:** REST API design, JSON serialization/deserialization, service layers.
+## How to Build/Run
 
-### 9. weatherapi
-- **Description:** Provides weather information via an API, possibly using external API calls.
-- **Skills Covered:** REST client integration, JSON handling, Spring Boot services.
+```
+# Build the project
+mvn package
 
----
+# Run the generated JAR from the target directory
+java -jar target/xml-converter-0.0.1-SNAPSHOT.jar
+```
 
-## Getting Started
+# 2. Weather API (weatherapi)
 
-### Prerequisites
-- Java 17 or later
-- Maven
-- MySQL (if using projects with database integration)
+## Project Type
 
-### Running a Project
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jitabhsin/Practice-Spring.git
+Maven Java.
+
+## Description
+
+A foundational project intended to work with weather data. Currently in an early stage of development.
+
+## Key Features
+
+* Includes testset.csv for data processing.
+* Contains basic project structure and dependencies.
+
+## How to Build
+
+```
+mvn package
+```
+
+# 3. JSON ↔ XML Converter (JSON_XML_VICE)
+
+## Project Type
+
+Maven Java utility.
+
+## Description
+
+A simple service for converting data between JSON and XML formats.
+
+## Key Features
+
+* Provides JsonXmlConverterService for two-way conversion.
+* Includes sample data.json and data.xml for testing.
+
+## How to Build
+
+```
+mvn package
+```
+
+# 4. JSON API (jsonapi)
+
+## Project Type
+
+Maven Spring Boot.
+
+## Description
+
+A RESTful API demonstrating standard CRUD operations for a User entity using JSON.
+
+## Key Features
+
+* Follows a layered architecture: Controller, Service, Repository.
+* Uses Spring Data JPA for database interactions.
+* Includes unit tests.
+
+## How to Build/Run
+
+```
+mvn spring-boot:run
+```
+
+# 5. Excel to MySQL Importer (excelmysql)
+
+## Project Type
+
+Maven Spring Boot.
+
+## Description
+
+A web application for importing data from Excel into a MySQL database and vice-versa.
+
+## Key Features
+
+* Manages Person entities.
+* ExcelService handles Excel file processing.
+* Integrates with MySQL (configured in application.properties).
+
+## How to Build/Run
+
+```
+# Ensure MySQL is running and configured
+mvn spring-boot:run
+```
+
+# 6. CVE API (cveapi)
+
+## Project Type
+
+Maven Spring Boot.
+
+## Description
+
+An API integrating with the National Vulnerability Database (NVD) to fetch and manage CVE data.
+
+## Key Features
+
+* NVDService for REST calls to NVD API.
+* CVEController exposes endpoints.
+* Uses DTOs (NVDResponseDTO) for mapping API responses.
+
+## How to Build/Run
+
+```
+mvn spring-boot:run
+```
+
+# 7. Employee API (employeeapi)
+
+## Project Type
+
+Maven Spring Boot.
+
+## Description
+
+A CRUD REST API for managing employee records.
+
+## Key Features
+
+* Standard Controller-Service-Repository pattern.
+* Clean and scalable project structure.
+
+## How to Build/Run
+
+```
+mvn spring-boot:run
+```
+
+# 8. Cat Fact Service (catfact)
+
+## Project Type
+
+Maven Spring Boot.
+
+## Description
+
+A fun microservice that consumes a third-party API to fetch random cat facts.
+
+## Key Features
+
+* CatFactController exposes the endpoint.
+* CatFactService handles external API calls.
+* Uses CatFactDto to structure the data.
+
+## How to Build/Run
+
+```
+mvn spring-boot:run
+```
+
+# 9. JSON to XML CLI Converter (assessment1)
+
+## Project Type
+
+Maven CLI utility.
+
+## Description
+
+A simple CLI tool for converting a JSON file to XML, built as a sample assessment.
+
+## Key Features
+
+* Cli.java serves as the main entry point.
+* Uses ConverterFactory to create the converter instance.
+* Includes sample input/output files (example_input.json, example_output.xml).
+
+## How to Build
+
+```
+mvn package
+```
