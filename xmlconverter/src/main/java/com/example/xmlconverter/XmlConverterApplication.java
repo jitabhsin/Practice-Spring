@@ -34,7 +34,7 @@ public class XmlConverterApplication implements CommandLineRunner {
         Files.createDirectories(outputDir);
 
         // --- Sample 1 ---
-        System.out.println("\n--- Processing sample1.xml ---");
+        System.out.println("\n--- Processin g sample1.xml ---");
         File sample1 = new ClassPathResource("sample1.xml").getFile();
         Message employee1 = converter.convert(sample1, EmployeeProto.Employee.getDefaultInstance());
         Path outputFile1 = outputDir.resolve("employee1_output.txt");

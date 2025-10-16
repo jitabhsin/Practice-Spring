@@ -297,6 +297,37 @@ A simple CLI tool for converting a JSON file to XML, built as a sample assessmen
 * Includes sample input/output files (example_input.json, example_output.xml).
 
 ## How to Build
+### Student Management (Fil_sort_page)
+
+**Type:** Spring Boot, Java 17, MySQL  
+
+**Purpose:**  
+Manage students with the ability to **add**, **list**, **paginate**, **sort**, and **filter** records.  
+Database auto-creates if not present.
+
+**Black-box Usage:**
+
+**API Endpoints:**
+
+| Method | Endpoint       | Description                                | Parameters / Body                                              |
+|--------|----------------|--------------------------------------------|----------------------------------------------------------------|
+| POST   | /students      | Add a new student                          | JSON body: `{ "name": "Alice", "age": 20, "email": "alice@mail.com" }` |
+| GET    | /students      | Retrieve students (with pagination, sorting, filtering) | Query params: `page`, `size`, `sortBy`, `sortDir`, `name`, `age` |
+
+**Example Requests:**
+
+```http
+# Add a student
+POST /students
+Content-Type: application/json
+{
+  "name": "Alice",
+  "age": 20,
+  "email": "alice@mail.com"
+}
+
+# Get first page (5 students per page), sort by age descending, filter by name "Alice"
+GET /students?page=0&size=5&sortBy=age&sortDir=desc&name=Alice
 
 ```
 mvn package
