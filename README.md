@@ -300,3 +300,20 @@ mvn spring-boot:run
 - `pom.xml`: Spring Boot + Apache POI + MySQL.
 - Sources: `src/main/java/` (Excel processing logic).
 
+## 12 . SpringSecirity - Basic Login and Signup page with role base 
+
+## Project Type
+ThymeLeaf , Maven Spring Boot (Java 17, MySQL).
+
+### Description
+Basic , Spring Security implementation along with Thymeleaf , to demonstrate implementation of Authorization and Authentication(session based)
+### How to Build/Run
+```powershell
+cd XlSheet
+mvn package
+mvn spring-boot:run
+```
+- Ensure MySQL is configured.
+### API Endpoints
+   /login 
+
