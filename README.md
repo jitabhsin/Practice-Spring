@@ -317,3 +317,9 @@ mvn spring-boot:run
 ### API Endpoints
    /login 
 
+## 13 . STUDENT 
+## Project type
+Spring , Mysql
+
+## DEscription 
+ basic practice of spring , just get , post , delete
