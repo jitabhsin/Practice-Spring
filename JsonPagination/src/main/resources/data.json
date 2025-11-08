@@ -1,0 +1,22 @@
+[
+  { "name": "Alice", "department": "Security", "email": "alice@example.com" },
+  { "name": "Bob", "department": "Development", "email": "bob@example.com" },
+  { "name": "Clara", "department": "Quality Assurance", "email": "clara@example.com" },
+  { "name": "David", "department": "Research", "email": "david@example.com" },
+  { "name": "Eva", "department": "Security", "email": "eva@example.com" },
+  { "name": "Frank", "department": "Development", "email": "frank@example.com" },
+  { "name": "Grace", "department": "Human Resources", "email": "grace@example.com" },
+  { "name": "Henry", "department": "Product Management", "email": "henry@example.com" },
+  { "name": "Irene", "department": "Security", "email": "irene@example.com" },
+  { "name": "Jack", "department": "Development", "email": "jack@example.com" },
+  { "name": "Kavya", "department": "UI/UX Design", "email": "kavya@example.com" },
+  { "name": "Liam", "department": "Infrastructure", "email": "liam@example.com" },
+  { "name": "Mira", "department": "Quality Assurance", "email": "mira@example.com" },
+  { "name": "Noah", "department": "Security", "email": "noah@example.com" },
+  { "name": "Olivia", "department": "Research", "email": "olivia@example.com" },
+  { "name": "Pranav", "department": "Development", "email": "pranav@example.com" },
+  { "name": "Quinn", "department": "Human Resources", "email": "quinn@example.com" },
+  { "name": "Riya", "department": "Product Management", "email": "riya@example.com" },
+  { "name": "Sandeep", "department": "Security", "email": "sandeep@example.com" },
+  { "name": "Tara", "department": "UI/UX Design", "email": "tara@example.com" }
+]
