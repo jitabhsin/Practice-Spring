@@ -330,3 +330,62 @@ Spring , Mysql , Json
 
 ## DEscription 
  parse the json file, store in Mysql , show endpoint , along pagination and filtering 
+
+ ## 15. JsonToXmlApplication
+## Project type
+Spring , inout.json
+
+## DEscription 
+ parse the json file, convert to the xml , using recursive , object
+ ```input.json
+{
+    "organization" : {
+        "name" : "Securin",
+        "type" : "Inc",
+        "building_number" : 4,
+        "floating" : -17.4,
+        "null_test": null
+    },
+    "security_related" : true,
+    "array_example0" : ["red", "green", "blue", "black"],
+    "array_example1" : [1, "red", [{ "nested" : true}], { "obj" : false}]
+}
+{
+	"samosa" :{
+		"aloo" : "yellow",
+		"maida" : "white"
+	},
+	"bolo jai mata di ": "jai mata di"
+}
+ ```
+ ```output.xml
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object>
+  <array name="array_example0">
+    <string>red</string>
+    <string>green</string>
+    <string>blue</string>
+    <string>black</string>
+  </array>
+  <array name="array_example1">
+    <number>1</number>
+    <string>red</string>
+    <array>
+      <object>
+        <boolean name="nested">true</boolean>
+      </object>
+    </array>
+    <object>
+      <boolean name="obj">false</boolean>
+    </object>
+  </array>
+  <object name="organization">
+    <null name="null_test"/>
+    <number name="floating">-17.4</number>
+    <string name="name">Securin</string>
+    <string name="type">Inc</string>
+    <number name="building_number">4</number>
+  </object>
+  <boolean name="security_related">true</boolean>
+</object>
+ ```
