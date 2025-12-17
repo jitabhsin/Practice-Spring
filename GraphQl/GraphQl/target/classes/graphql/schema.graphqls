@@ -1,0 +1,23 @@
+type Book {
+    id: ID
+    title: String
+    author: String
+    price: Float
+}
+
+type Query{
+   
+   
+   
+   getAllBooks: [Book]
+   getBookById( id : ID!): Book
+  
+}
+
+type Mutation{
+
+  createBook( title: String! , author: String!, price: Float): Book
+  deleteBook( id: ID!): String
+   updateBook(id: ID!, title: String, author: String, price: Float): Book
+}
+
