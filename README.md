@@ -389,3 +389,9 @@ Spring , inout.json
   <boolean name="security_related">true</boolean>
 </object>
  ```
+  ## 15. GRAPHQL API
+## Project type
+Spring , GraphQL
+
+## DEscription 
+ create a basic GRAPHQL API in springboot
